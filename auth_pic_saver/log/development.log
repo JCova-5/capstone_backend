@@ -233,3 +233,198 @@ Processing by UsersController#login as */*
 Completed 200 OK in 228ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 849)
 
 
+Started POST "/users/login" for ::1 at 2020-08-12 23:07:08 -0700
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"user"=>{"username"=>"Peter", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Peter"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `login'
+Completed 200 OK in 254ms (Views: 0.6ms | ActiveRecord: 10.3ms | Allocations: 6305)
+
+
+Started GET "/users" for ::1 at 2020-08-12 23:09:03 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:20:in `index'
+Completed 200 OK in 15ms (Views: 6.9ms | ActiveRecord: 5.8ms | Allocations: 5397)
+
+
+Started GET "/users" for ::1 at 2020-08-12 23:09:13 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:20:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.7ms | Allocations: 999)
+
+
+Started POST "/users/login" for ::1 at 2020-08-12 23:12:54 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"user"=>{"username"=>"Peter", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Peter"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `login'
+Completed 200 OK in 249ms (Views: 0.5ms | ActiveRecord: 7.1ms | Allocations: 6320)
+
+
+Started GET "/users" for ::1 at 2020-08-12 23:13:16 -0700
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Peter", "password"=>"[FILTERED]"}}
+Filter chain halted as :authenticate_token rendered or redirected
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 133)
+
+
+Started GET "/users" for ::1 at 2020-08-12 23:13:57 -0700
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Peter", "password"=>"[FILTERED]"}}
+Filter chain halted as :authenticate_token rendered or redirected
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 126)
+
+
+Started GET "/users" for ::1 at 2020-08-12 23:14:11 -0700
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Peter", "password"=>"[FILTERED]"}}
+Filter chain halted as :authenticate_token rendered or redirected
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 126)
+
+
+Started GET "/users" for ::1 at 2020-08-12 23:16:05 -0700
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Peter", "password"=>"[FILTERED]"}}
+Filter chain halted as :authenticate_token rendered or redirected
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 174)
+
+
+Started GET "/users" for ::1 at 2020-08-12 23:16:35 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Peter", "password"=>"[FILTERED]"}}
+Filter chain halted as :authenticate_token rendered or redirected
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 218)
+
+
+Started GET "/users" for ::1 at 2020-08-12 23:18:25 -0700
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Peter", "password"=>"[FILTERED]"}}
+Filter chain halted as :authenticate_token rendered or redirected
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 178)
+
+
+Started GET "/users" for ::1 at 2020-08-12 23:18:39 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Peter", "password"=>"[FILTERED]"}}
+Filter chain halted as :authenticate_token rendered or redirected
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 222)
+
+
+Started GET "/users" for ::1 at 2020-08-12 23:19:56 -0700
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Peter", "password"=>"[FILTERED]"}}
+Filter chain halted as :authenticate_token rendered or redirected
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 375)
+
+
+Started GET "/users" for ::1 at 2020-08-12 23:21:34 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Peter", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:20:in `index'
+Completed 200 OK in 22ms (Views: 9.5ms | ActiveRecord: 8.1ms | Allocations: 5993)
+
+
+Started GET "/users/1" for ::1 at 2020-08-12 23:25:42 -0700
+Processing by UsersController#show as */*
+  Parameters: {"user"=>{"username"=>"Peter", "password"=>"[FILTERED]"}, "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `set_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 4.9ms | Allocations: 6419)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "profile_img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Gollum"], ["password_digest", "$2a$12$soAzlBTq05.nWTHYBc6URezloUnsgq6zY8JjEEJn0YhNRujVY0T.m"], ["profile_img", "https://images.unsplash.com/photo-1531259683007-016a7b628fc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"], ["created_at", "2020-08-13 06:32:49.434143"], ["updated_at", "2020-08-13 06:32:49.434143"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/users" for ::1 at 2020-08-12 23:33:36 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Gollum", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password[0m
+Completed 422 Unprocessable Entity in 27ms (Views: 0.2ms | ActiveRecord: 5.9ms | Allocations: 8612)
+
+
+Started POST "/users" for ::1 at 2020-08-12 23:34:12 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Gollum", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password[0m
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 683)
+
+
+Started POST "/users" for ::1 at 2020-08-12 23:34:43 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Gollum", "password_digest"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:33:in `create'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Gollum"], ["password_digest", "Gollum"], ["created_at", "2020-08-13 06:34:43.437341"], ["updated_at", "2020-08-13 06:34:43.437341"]]
+  ↳ app/controllers/users_controller.rb:33:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:33:in `create'
+Completed 201 Created in 7ms (Views: 0.6ms | ActiveRecord: 2.2ms | Allocations: 2729)
+
+
+Started POST "/users" for ::1 at 2020-08-12 23:35:01 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Peter", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password[0m
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 673)
+
+
+Started POST "/users" for ::1 at 2020-08-12 23:35:48 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Peter", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:33:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Peter"], ["password_digest", "$2a$12$fpPB6jEYkIDp9wYWZT5QCuIG81z3VHIDOZuetuDrm2fiYXqSbYtba"], ["created_at", "2020-08-13 06:35:49.021194"], ["updated_at", "2020-08-13 06:35:49.021194"]]
+  ↳ app/controllers/users_controller.rb:33:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:33:in `create'
+Completed 201 Created in 256ms (Views: 0.8ms | ActiveRecord: 9.4ms | Allocations: 7779)
+
+
+Started POST "/users" for ::1 at 2020-08-12 23:36:08 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Gollum", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:33:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Gollum"], ["password_digest", "$2a$12$a68MObS2qjeXp/Q1xQxdouAcU0hp4fhCQFfT755wJapxqiBjXMwga"], ["created_at", "2020-08-13 06:36:08.362513"], ["updated_at", "2020-08-13 06:36:08.362513"]]
+  ↳ app/controllers/users_controller.rb:33:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:33:in `create'
+Completed 201 Created in 230ms (Views: 0.5ms | ActiveRecord: 1.2ms | Allocations: 2608)
+
+
+Started GET "/users/5" for ::1 at 2020-08-12 23:36:58 -0700
+Processing by UsersController#show as */*
+  Parameters: {"user"=>{"username"=>"Gollum", "password"=>"[FILTERED]"}, "id"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:57:in `set_user'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 2571)
+
+
+Started GET "/users/1" for ::1 at 2020-08-12 23:37:00 -0700
+Processing by UsersController#show as */*
+  Parameters: {"user"=>{"username"=>"Gollum", "password"=>"[FILTERED]"}, "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:57:in `set_user'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 916)
+
+
+Started GET "/users/1" for ::1 at 2020-08-12 23:37:44 -0700
+Processing by UsersController#show as */*
+  Parameters: {"user"=>{"username"=>"Gollum", "password"=>"[FILTERED]"}, "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:57:in `set_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 916)
+
+
