@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :update, :destroy]
-  before_action :authenticate_token, except: [:login, :create, :index, :show, :destroy]
-  before_action :authorize_user, except: [:login, :create, :index, :destroy]
+  before_action :authenticate_token, except: [:login, :create, :index, :show, :update]
+  before_action :authorize_user, except: [:login, :create, :index, :show, :update, :destroy]
 
   def login
     user = User.find_by(username: params[:user][:username])
@@ -59,7 +59,7 @@ class UsersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def user_params
-      params.require(:user).permit(:username, :password_digest, :profile_img)
+      params.permit(:username, :password, :profile_img)
     end
 
     def create_token(id, username)
