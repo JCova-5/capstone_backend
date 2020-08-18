@@ -4,9 +4,9 @@ class UsersController < ApplicationController
   before_action :authorize_user, except: [:login, :create, :index, :show, :update, :destroy]
 
   def login
-    user = User.find_by(username: params[:user][:username])
+    user = User.find_by(username: params[:username])
 
-    if user && user.authenticate(params[:user][:password])
+    if user && user.authenticate(params[:password])
       token = create_token(user.id, user.username)
       render json: { status: 200, token: token, user: user }
     else 
